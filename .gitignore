@@ -33,3 +33,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# studies
+pages/restaurants.js
+pages/tomdickandharry.jsx

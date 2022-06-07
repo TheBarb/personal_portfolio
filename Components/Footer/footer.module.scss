@@ -1,0 +1,11 @@
+.flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-top: 1px solid black;
+}
+
+.nav_link {
+    list-style-type: none;
+}

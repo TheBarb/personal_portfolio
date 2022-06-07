@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import RadioButton from '../Components/RadioButton/RadioButton'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({restaurants = []}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,10 +13,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        
+        <RadioButton/>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Die Entwicklerin werden, <br/>die ich immer gesucht habe 
+          {/*<a href="https://nextjs.org">Next.js!</a>*/}
         </h1>
-
+      <ul>
+      {restaurants.map((restaurant) => (
+        <li>{restaurant.name}</li>
+        ))}
+      </ul>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
@@ -67,3 +75,23 @@ export default function Home() {
     </div>
   )
 }
+
+
+/*
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+
+export async function getStaticProps(context) {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch('https://localhost:1337/api/restaurants')
+  const restaurants = await res.json()
+  console.log(restaurants)
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return { props: { restaurants: data ?? [], error: error ?? null, preview: !!context?.preview } };
+  
+}
+*/
