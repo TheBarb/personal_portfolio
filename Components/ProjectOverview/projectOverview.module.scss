@@ -1,0 +1,32 @@
+.wrapper {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.back {
+    padding-top: 10px;
+    @media (min-width: 768px) {
+        padding-top: 20px;
+    }
+}
+
+.arrow {
+    padding-right: 10px;
+}
+
+.client {
+    padding-top: 20px;
+    @media (min-width: 768px) {
+        padding-top: 50px;
+    }
+}
+
+.techStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.arrangeButton {
+    margin-right: 20px;
+}

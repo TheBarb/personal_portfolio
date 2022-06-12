@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './button.module.scss'
 
-const Button = () => {
+const Button = ({buttonContent}) => {
 
-    const buttonContent = "MEHR"
   return (
     <button className={styles.knöpfchen}>
-       {buttonContent}
+    {buttonContent}
     </button>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './frontpage.module.scss'
-import Desktop from '../Desktop/Desktop'
 
 const Frontpage = ({content}) => {
 

@@ -24,7 +24,7 @@ import styles from './radioButton.module.scss'
 
       return (
         <div className={styles.sudo}>
-        <img className={styles.radio}  src={button ? icon.white : icon.black} alt="Vercel Logo" onClick={handleChange} />
+        <img className={styles.radio}  src={button ? icon.white : icon.black} alt="radioButton" onClick={handleChange} />
         </div>
     )
   };

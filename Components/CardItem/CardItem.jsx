@@ -14,7 +14,7 @@ const CardItem = ({card}) => {
           <div className={styles.title}>{card.attributes.title}</div>
           <div className={styles.teaser}>{card.attributes.teaser}</div>
         </div>
-        <Button/> 
+        <Button buttonContent='MEHR'/> 
     </div>
     </a>
    </Link> 

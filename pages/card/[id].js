@@ -1,10 +1,15 @@
-import Link from "next/link";
-import { useRouter } from "next/router"
-import CardItem from "../../Components/CardItem/CardItem";
-import Desktop from '../../Components/Desktop/Desktop'
+//import Link from "next/link";
+//import { useRouter } from "next/router"
+//import CardItem from "../../Components/CardItem/CardItem";
+import Navbar from '../../Components/Navbar/Navbar'
+import Colorblock from "../../Components/Colorblock/Colorblock";
 
+import MockDesktop from "../../Components/MockDesktop/MockDesktop";
+import ViewportConditional from '../../Components/ViewportConditional/ViewportConditional'
+import ProjectOverview from "../../Components/ProjectOverview/ProjectOverview";
+const card = (project) => {
 
-const card = (project, tech) => {
+  
 
   /* const router = useRouter();
   const url = router.query;
@@ -14,39 +19,40 @@ const card = (project, tech) => {
  
 
   const projectContent = project.project.data.attributes;
-  
-
   const techStack = projectContent.teches.data;
+  const url = projectContent.Url;
+ 
 
   console.log(techStack);
 
  
+ 
 
   return(
     <>
-    <Desktop/>
-    
-    {techStack.map((tech, index) => {
-    return(
-  <div key= {index}>
-     {tech.attributes.skill}
-   </div> 
+    <Navbar/>
+    {/*<ViewportConditional/>*/}
+    <Colorblock/>
+    <ProjectOverview projectContent={projectContent} techStack={techStack}/>
    
-    )})}
-    <h4>{projectContent.title}</h4>
-    <div>{projectContent.teaser}</div>
-    <div>{projectContent.client}</div>
-    <h3>{projectContent.firstChapterTitle}</h3>
-    <p>{projectContent.firstChapterText}</p>
-    <h3>{projectContent.secondChapterTitle}</h3>
-    <p>{projectContent.secondChapterText}</p>
-    <h3>{projectContent.thirdChapterTitle}</h3>
-    <p>{projectContent.thirdChapterText}</p>
-    <p>{projectContent.shortDescription}</p>
-    <p>{projectContent.longDescription}</p>
-    <h3>{projectContent.forthChapterTitle}</h3>
-    <p>{projectContent.forthChapterText}</p>
-    <Link href='/landingpage'>Go back</Link>
+
+<MockDesktop url={url}/>
+
+
+<p>01</p>
+<p>Briefing</p>
+<p>{projectContent.Briefing}</p>
+
+<p>02</p>
+<p>Herausforderung</p>
+<p>{projectContent.Herausforderung}</p>
+
+<p>03</p>
+<p>What's next</p>
+<p>{projectContent.WhatsNext}</p>
+
+    
+   
     </>
   )
 

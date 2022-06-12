@@ -1,8 +1,9 @@
-import styles from './desktop.module.scss'
+import styles from './mockDesktop.module.scss'
 
 import React from 'react'
 
-const Desktop = () => {
+const MockDesktop = ({url}) => {
+
   return (
       <>
       <div className={styles.flexWrapper}>
@@ -13,10 +14,8 @@ const Desktop = () => {
       </div>
       <div className={styles.drawingDesktop}>
     <div className={styles.iframeWrapper}>
-     {/* <iframe className={styles.contentDesktop} src="https://www.leagk.com" frameBorder="0"></iframe>  */}
-     <iframe className={styles.contentDesktop} src="https://www.tomdickandharry.de" frameBorder="0"></iframe> 
-      {/* <iframe className={styles.contentDesktop} src="http://www.nelepachnicke.de" frameBorder="0"></iframe>  */}
-
+     <iframe className={styles.contentDesktop} src={url} frameBorder="0"></iframe> 
+  
     </div>
     </div>
     </div>
@@ -24,4 +23,4 @@ const Desktop = () => {
   )
 }
 
-export default Desktop
+export default MockDesktop

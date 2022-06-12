@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import RadioButton from '../Components/RadioButton/RadioButton'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home({restaurants = []}) {
   return (
@@ -15,6 +15,7 @@ export default function Home({restaurants = []}) {
       <main className={styles.main}>
         
         <RadioButton/>
+        <Image src="/sphere.svg" alt="sphere" width={72} height={16} />
         <h1 className={styles.title}>
           Die Entwicklerin werden, <br/>die ich immer gesucht habe 
           {/*<a href="https://nextjs.org">Next.js!</a>*/}
