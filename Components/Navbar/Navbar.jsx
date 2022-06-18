@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Link from 'next/link'
 import styles from './navbar.module.scss'
 import RadioButton from '../RadioButton/RadioButton'
+import Logo from '../Logo/Logo'
 
 const Navbar = () => {
   const [isModal, setIsModal] = useState(false);
@@ -14,7 +15,12 @@ const Navbar = () => {
   return (
    <>
   <div className={`${styles.navigation} ${activeClass}`}>
-    <h4><Link href="/"><div className={`${styles.logo} ${activeClass}`}>BARBARA SCHULZE</div></Link></h4>
+  {/*<Logo/>*/}
+   <h4>
+        <Link href="/">
+            <div className={`${styles.logo} ${activeClass}`}>Barbara Schulze</div>
+        </Link>
+    </h4> 
     <div onClick={() => setIsModal(!isModal)}>
       <RadioButton/>
     </div>

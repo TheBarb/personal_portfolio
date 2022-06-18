@@ -1,0 +1,76 @@
+.flexWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawingMobileTop {
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 375px;
+    height: 45px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 25px 25px 0px 0px;
+    //box-shadow: 5px 10px #70FF00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+} 
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: -25px;
+}
+
+.microphone {
+    width: 45px;
+    height: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+.drawingPhone {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 375px;
+    //height: 602px;
+    padding-right: 12.5px;
+    padding-left: 11px;
+    //border-radius: 0px 0px 10px 10px;
+    //background-color: white;
+    //box-shadow: 5px 10px #70FF00;
+    
+} 
+
+.iframeWrapper {
+    width: 350px;
+    overflow: hidden;
+}
+
+.contentMobile {
+   height: 600px;
+   width: 350px;
+}
+
+.drawingMobileBottom {
+    padding-top: 10px;
+    width: 375px;
+    height: 45px;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0px 0px 25px 25px ;
+    //box-shadow: 5px 10px #70FF00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+

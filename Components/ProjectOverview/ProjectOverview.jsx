@@ -7,7 +7,7 @@ const ProjectOverview = ({projectContent, techStack}) => {
   return (
     <div className={styles.wrapper}>
         <Link href='/landingpage'> 
-        <p className={styles.back}>   <span className={styles.arrow}>ᐸ</span>ZURÜCK</p>
+        <p className={styles.back}><span className={styles.arrow}>ᐸ</span>ZURÜCK</p>
         </Link>
         <h3 className={styles.client}>{projectContent.client}</h3>
         <h2>{projectContent.shortDescription}</h2>

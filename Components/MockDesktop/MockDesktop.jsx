@@ -6,7 +6,7 @@ const MockDesktop = ({url}) => {
 
   return (
       <>
-      <div className={styles.flexWrapper}>
+     <div className={styles.flexWrapper}>
       <div className={styles.drawingBrowser}>
           <div className={styles.circle}></div>
           <div className={styles.circle}></div>
@@ -18,7 +18,7 @@ const MockDesktop = ({url}) => {
   
     </div>
     </div>
-    </div>
+    </div> 
     </>
   )
 }

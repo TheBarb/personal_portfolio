@@ -5,8 +5,10 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Colorblock from "../../Components/Colorblock/Colorblock";
 
 import MockDesktop from "../../Components/MockDesktop/MockDesktop";
+import MockMobile from '../../Components/MockMobile/MockMobile'
 import ViewportConditional from '../../Components/ViewportConditional/ViewportConditional'
 import ProjectOverview from "../../Components/ProjectOverview/ProjectOverview";
+
 const card = (project) => {
 
   
@@ -31,12 +33,9 @@ const card = (project) => {
   return(
     <>
     <Navbar/>
-    {/*<ViewportConditional/>*/}
     <Colorblock/>
     <ProjectOverview projectContent={projectContent} techStack={techStack}/>
-   
-
-<MockDesktop url={url}/>
+   <ViewportConditional url={url}/>
 
 
 <p>01</p>
