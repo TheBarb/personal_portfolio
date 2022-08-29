@@ -17,7 +17,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   
 } 
 
 .circle {
@@ -49,14 +48,10 @@
     
 } 
 
-.iframeWrapper {
-    width: 350px;
-    overflow: hidden;
-}
-
 .contentMobile {
    height: 600px;
    width: 350px;
+   border: 1px solid black;
 }
 
 .drawingMobileBottom {

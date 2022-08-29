@@ -1,28 +1,18 @@
+.centerAllQuestions {
+display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
 .allQuestionsWrap {
     padding: 10vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
+    align-items: center;
+   
+    @media all and (min-width: 925px){
+      flex-direction: row;
     flex-wrap: wrap;
+    }
 }
 
-/*
-.questionWrapper {
-  width: 350px;
-  height: 350px;
-  border: 1px solid black;
-padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.titleWrapper {
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-  }
-
-.number {
-  margin-right: 30px;
-}
-*/

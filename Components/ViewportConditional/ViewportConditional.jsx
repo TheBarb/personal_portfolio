@@ -4,7 +4,7 @@ import MockDesktop from "../../Components/MockDesktop/MockDesktop";
 
 const ViewportConditional = ({ url }) => {
   const [width, setWidth] = useState(0);
-  const breakpoint = 768;
+  const breakpoint = 1024;
 
   useEffect(() => {
     function handleWindowResize() {

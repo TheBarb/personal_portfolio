@@ -33,6 +33,14 @@
   }
 }
 
+.bridge {
+  padding-top: 30px;
+  width: 50vw;
+  @media all and (min-width: 768px){
+    width: 65vw;
+  }
+}
+
 .short_vertical_line { 
         /*background-color: red;*/
         height: 60px;

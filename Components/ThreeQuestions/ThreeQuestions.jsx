@@ -5,8 +5,9 @@ import OneQuestion from "../OneQuestion/OneQuestion";
 const ThreeQuestions = ({ projectContent }) => {
   return (
     <>
+    <div className={styles.centerAllQuestions}>
       <div className={styles.allQuestionsWrap}>
-       <OneQuestion text={projectContent.Briefing} number='1' headline='Briefing'/>
+       <OneQuestion text={projectContent.Briefing} number='1' headline='Ausgangspunkt'/>
        <OneQuestion text={projectContent.Herausforderung} number='2' headline='Herausforderung'/>
        <OneQuestion text={projectContent.WhatsNext} number='3' headline="What's next?"/>
 
@@ -25,6 +26,7 @@ const ThreeQuestions = ({ projectContent }) => {
           </div>
           <div>{projectContent.WhatsNext}</div>
         </div> */}
+      </div>
       </div>
     </>
   );

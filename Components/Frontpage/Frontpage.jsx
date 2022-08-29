@@ -3,7 +3,7 @@ import styles from './frontpage.module.scss'
 
 const Frontpage = ({content}) => {
 
-  const {intro, punchline} = content.data.attributes;
+  const {intro, punchline, bridge} = content.data.attributes;
 
   return (
    <>
@@ -15,6 +15,7 @@ const Frontpage = ({content}) => {
             <div className={styles.short_vertical_line}> </div>
           <h1 className={styles.punchline}>{punchline}</h1>
             <div className={styles.long_vertical_line}> </div>
+            <p className={styles.bridge}> {bridge}</p>
         </div>
 
         <div className={styles.sudo_two}>
