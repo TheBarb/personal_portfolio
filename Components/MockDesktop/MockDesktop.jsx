@@ -23,7 +23,6 @@ const MockDesktop = ({url}) => {
   ) : (
    <div></div>
   );
-
 }
 
 export default MockDesktop
