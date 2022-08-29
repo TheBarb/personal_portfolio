@@ -7,23 +7,3 @@
     flex-wrap: wrap;
 }
 
-
-.card {
-width: 350px;
-height: 350px;
-padding: 50px;
-margin: 10px;
-border: 1px solid black;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.title {
-padding-bottom: 20px;
-text-transform: uppercase;
-}
-
-.teaser {
-font-weight: bold;
-}

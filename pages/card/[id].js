@@ -8,6 +8,7 @@ import MockDesktop from "../../Components/MockDesktop/MockDesktop";
 import MockMobile from '../../Components/MockMobile/MockMobile'
 import ViewportConditional from '../../Components/ViewportConditional/ViewportConditional'
 import ProjectOverview from "../../Components/ProjectOverview/ProjectOverview";
+import ThreeQuestions from '../../Components/ThreeQuestions/ThreeQuestions'
 
 const card = (project) => {
 
@@ -25,7 +26,7 @@ const card = (project) => {
   const url = projectContent.Url;
  
 
-  console.log(techStack);
+  //console.log(techStack);
 
  
  
@@ -35,23 +36,8 @@ const card = (project) => {
     <Navbar/>
     <Colorblock/>
     <ProjectOverview projectContent={projectContent} techStack={techStack}/>
-   <ViewportConditional url={url}/>
-
-
-<p>01</p>
-<p>Briefing</p>
-<p>{projectContent.Briefing}</p>
-
-<p>02</p>
-<p>Herausforderung</p>
-<p>{projectContent.Herausforderung}</p>
-
-<p>03</p>
-<p>What's next</p>
-<p>{projectContent.WhatsNext}</p>
-
-    
-   
+    <ViewportConditional url={url}/>
+    <ThreeQuestions projectContent={projectContent}/>
     </>
   )
 

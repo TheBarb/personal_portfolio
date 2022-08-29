@@ -1,7 +1,7 @@
 // posts will be populated at build time by getStaticProps()
 function Projects({ projects = [] }) {
 
-    console.log({projects})
+    //console.log({projects})
     return (
       <div>
           {projects.data.map((project, index) => (
