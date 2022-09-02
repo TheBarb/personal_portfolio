@@ -7,7 +7,8 @@ const CardItem = ({card}) => {
   return (
     <>
 
-   <Link href="/card/[id]" as={`/card/${card.id}`} >
+   <Link href="/card/[id]" as={`/card/${card.id}`}>
+   {/* <Link href="/projects/[slug]" as={`/projects/${card.attributes.Slug}`} > */}
     <a>
     <div className={styles.card}>
         <div>

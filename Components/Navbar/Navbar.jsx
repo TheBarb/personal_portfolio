@@ -27,13 +27,13 @@ const Navbar = () => {
   </div>
   <ul className={`${styles.menu} ${activeClass}`}>
       <li className={styles.nav_link} >
-        <h4><Link href="/punkt">punkt</Link></h4>
+        <h4><Link href="/">punkt</Link></h4>
       </li>
       <li className={styles.nav_link} >
-        <h4><Link href="/komma">komma</Link></h4>
+        <h4><Link href="/">komma</Link></h4>
       </li>
       <li className={styles.nav_link} >
-        <h4><Link href="/strich">strich</Link></h4>
+        <h4><Link href="/">strich</Link></h4>
       </li>
   </ul>
        
@@ -43,4 +43,3 @@ const Navbar = () => {
 }
 
 export default Navbar
- 

@@ -6,7 +6,7 @@ import Button from '../../Components/Button/Button'
 const ProjectOverview = ({projectContent, techStack}) => {
   return (
     <div className={styles.wrapper}>
-        <Link href='/landingpage'> 
+        <Link href='/'> 
         <p className={styles.back}><span className={styles.arrow}>ᐸ</span>ZURÜCK</p>
         </Link>
         <h3 className={styles.client}>{projectContent.client}</h3>

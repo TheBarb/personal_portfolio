@@ -9,7 +9,7 @@ const ThreeQuestions = ({ projectContent }) => {
       <div className={styles.allQuestionsWrap}>
        <OneQuestion text={projectContent.Briefing} number='1' headline='Ausgangspunkt'/>
        <OneQuestion text={projectContent.Herausforderung} number='2' headline='Herausforderung'/>
-       <OneQuestion text={projectContent.WhatsNext} number='3' headline="What's next?"/>
+       <OneQuestion text={projectContent.WhatsNext} number='3' headline="Ausblick"/>
 
        {/*  <div className={styles.questionWrapper}>
           <div className={styles.titleWrapper}>

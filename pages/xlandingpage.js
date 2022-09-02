@@ -8,7 +8,7 @@ import Footer from '../Components/Footer/Footer'
    const Landingpage = ({landingpage, projects}) => {
      return (
        <div>
-         <Navbar/>
+         <Navbar projects={projects}/>
          <Frontpage content={landingpage}/>
          <Cards cardContent={projects}/>
          <Footer/>
