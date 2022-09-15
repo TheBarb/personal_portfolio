@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import styles from './radioButton.module.scss'
 
 
-  const RadioButton = (props) => {
+  const RadioButton = () => {
     const [button, setButton] = useState(false);
 
     let icon = {

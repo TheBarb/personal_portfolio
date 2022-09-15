@@ -18,10 +18,12 @@ import Footer from '../Components/Footer/Footer'
 
    export async function getStaticProps() {
   
-    const res = await fetch('http://localhost:1337/api/landing-page')
+    // const res = await fetch('http://localhost:1337/api/landing-page')
+    const res = await fetch('http://barb-personal-website.herokuapp.com/api/landing-page')
     const landingpage = await res.json()
 
-    const anotherRes = await fetch('http://localhost:1337/api/projects')
+    // const anotherRes = await fetch('http://localhost:1337/api/projects')
+    const anotherRes = await fetch('http://barb-personal-website.herokuapp.com/api/projects')
     const projects = await anotherRes.json()
 
     return {

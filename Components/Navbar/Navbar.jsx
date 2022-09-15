@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Link from 'next/link'
 import styles from './navbar.module.scss'
 import RadioButton from '../RadioButton/RadioButton'
-import Logo from '../Logo/Logo'
+// import Logo from '../Logo/Logo'
 
 const Navbar = () => {
   const [isModal, setIsModal] = useState(false);

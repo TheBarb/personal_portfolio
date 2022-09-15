@@ -46,7 +46,7 @@ const card = (project) => {
 export default card
 
 export async function getStaticProps(context) {
-    const res = await fetch(`http://localhost:1337/api/projects/${context.params.id}?populate=teches`)
+    const res = await fetch(`http://barb-personal-website.herokuapp.com/api/projects/${context.params.id}?populate=teches`)
     const project = await res.json()
 
     return {
@@ -57,7 +57,7 @@ export async function getStaticProps(context) {
   
 
  export const getStaticPaths = async () => {
-    const res = await fetch (`http://localhost:1337/api/projects`)
+    const res = await fetch (`http://barb-personal-website.herokuapp.com/api/projects`)
     const projects = await res.json()
     const ids = projects.data.map(project => project.id)
     const paths = ids.map(id => ({params: {id: id.toString()}}))
