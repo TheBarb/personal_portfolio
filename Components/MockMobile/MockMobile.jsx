@@ -4,7 +4,7 @@ import styles from './mockMobile.module.scss'
 const MockMobile = ({url}) => {
 
 
-  return (
+  return url? (
     <>
   <div className={styles.flexWrapper}>
       <div className={styles.drawingMobileTop}>
@@ -19,7 +19,9 @@ const MockMobile = ({url}) => {
       <div className={styles.drawingMobileBottom}></div>
   </div> 
   </>
-  )
+  ) : (
+    <div></div>
+   );
 }
 
 export default MockMobile;

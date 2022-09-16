@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
     <div className={styles.flexFooter}>
-    <div><span>© </span>BARBARA SCHULZE 2022</div>
+    <div className={styles.nav_link}><span>© </span>BARBARA SCHULZE 2022</div>
     <li className={styles.nav_link} >
    <Link href="https://github.com/TheBarb">GITHUB</Link>
     </li>
