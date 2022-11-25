@@ -12,7 +12,6 @@ const Frontpage = ({content}) => {
 
         <div className={styles.sudo_one}>
            <p className={styles.intro}> {intro}</p>
-           <div>TEST</div>
             <div className={styles.short_vertical_line}> </div>
           <h1 className={styles.punchline}>{punchline}</h1>
             <div className={styles.long_vertical_line}> </div>
